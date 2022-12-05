@@ -85,12 +85,7 @@ LOGIN_REDIRECT_URL = '/account'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    #'default': {
-    #    'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': BASE_DIR / 'db.sqlite3',
-    #}
-}
+DATABASES = {}
 
 if not DEBUG:
     db_from_env = dj_database_url.config(conn_max_age=500)
