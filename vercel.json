@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "django_blog/wsgi.py",
+            "use": "@now/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "django_blog/wsgi.py"
+        }
+    ]
+}
